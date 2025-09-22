@@ -4,8 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                echo 'The repo is getting pulled'
-            }
+                git branch: 'main', url: 'https://github.com/iamtruptimane/CICD-with-AWS-code-services.git'            }
         }
         
          stage('Build') {
