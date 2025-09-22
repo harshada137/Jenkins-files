@@ -1,0 +1,29 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Pull') {
+            steps {
+                echo 'The repo is getting pulled'
+            }
+        }
+        
+         stage('Build') {
+            steps {
+                echo 'Building the repo'
+            }
+        }
+        
+         stage('Test') {
+            steps {
+                echo 'Testing the Project'
+            }
+        }
+        
+         stage('Deploy') {
+            steps {
+                echo 'Deploying The Project'
+            }
+        }
+    }
+}
